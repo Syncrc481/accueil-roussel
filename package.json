@@ -1,0 +1,18 @@
+{
+  "name": "brief-olivier-04nov26",
+  "version": "1.0.0",
+  "description": "1. npm init -y\r 2. npm i tailwindcss @tailwindcss/cli\r 3. apres faire dossier src puis input.css et .gitignore\r 4. npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch\r 5. dans le html - link rel=\"stylesheet\" href=\"dist/output.css\"\r 6. dans input.css mettre \" @import \"tailwindcss\"; \" cette ligne importe tout tailwind\r    c'est le reset (aussi appelé Préflight)\r 7. \"dev\": \"tailwindcss -i ./src/input.css -o ./dist/output.css --watch\" a la place de test\r 8. puis dans le terminal tapez npm run dev\r 9. puis ajouter la commande \"build\": \"tailwindcss -i ./src/input.css -o ./dist/outpout.css --minify\"",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.4",
+    "tailwindcss": "^4.3.4"
+  }
+}
