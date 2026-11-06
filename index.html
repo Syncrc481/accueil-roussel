@@ -6,110 +6,117 @@
     <title>Fleurs Roussel</title>
     <link rel="stylesheet" href="dist/output.css">
 </head>
-<body>
-<header>
-    <a href="#">Fleurs Roussel</a>
+<body class="font-texte">
+<header class="flex items-center justify-between bg-creme px-4 py-4 md:px-8">
+    <a href="#" class="flex items-center gap-2 font-titre text-2xl font-bold text-bordeaux">
+        <span aria-hidden="true" class="block size-12 bg-[url('../img/fleurlogo.svg')] bg-contain bg-center bg-no-repeat"></span>
+        Fleurs Roussel
+    </a>
     <nav>
-        <ul>
-            <li><a href="#bouquets">Bouquets</a></li>
-            <li><a href="#atelier">Ateliers</a></li>
-            <li><a href="#pourquoi">L’artisane</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#contact">Commander</a></li>
+        <ul class="flex items-center gap-3 font-texte text-sm font-medium md:gap-6">
+            <li class="hidden md:block"><a href="#bouquets">Bouquets</a></li>
+            <li class="hidden md:block"><a href="#atelier">Ateliers</a></li>
+            <li class="hidden md:block"><a href="#pourquoi">L’artisane</a></li>
+            <li class="hidden md:block"><a href="#contact">Contact</a></li>
+            <li><a href="#contact" class="rounded-full bg-framboise px-6 py-3 text-sm font-semibold text-white">Commander</a></li>
         </ul>
     </nav>
 </header>
-
 <main>
-
-    <section id="accueil">
-        <div>
-            <p>Artisane fleuriste à Vendôme, Loir-et-Cher</p>
-            <h1>Des fleurs de saison, composées à la main</h1>
-            <p>Bouquets du marché, roses anciennes et compositions champêtres : chaque semaine, Madame Roussel choisit les plus belles fleurs des producteurs de la région.</p>
-            <a href="#bouquets">Voir les bouquets</a>
-            <a href="#atelier">Nos ateliers</a>
+    <section id="accueil" class="flex flex-col gap-10 bg-creme px-4 pt-8 pb-16 md:flex-row md:items-center md:justify-center md:px-8 md:py-20">
+        <div class="md:w-1/2 md:max-w-xl">
+            <p class="mb-4 font-texte text-xs font-semibold uppercase tracking-[0.1em] text-sauge">Artisane fleuriste à Vendôme, Loir-et-Cher</p>
+            <h1 class="mb-6 font-titre text-4xl font-bold text-encre md:text-5xl lg:text-6xl">Des fleurs de saison, composées à la main</h1>
+            <p class="mb-8 font-texte text-lg text-encre">Bouquets du marché, roses anciennes et compositions champêtres : chaque semaine, Madame Roussel choisit les plus belles fleurs des producteurs de la région.</p>
+            <a href="#bouquets" class="mb-4 flex w-full items-center justify-center rounded-full bg-framboise px-6 py-3 font-texte text-base font-semibold text-blanc sm:mb-0 sm:mr-3 sm:inline-flex sm:w-auto">Voir les bouquets</a>
+            <a href="#atelier" class="flex w-full items-center justify-center rounded-full border border-framboise px-6 py-3 font-texte text-base font-semibold text-framboise sm:inline-flex sm:w-auto">Nos ateliers</a>
         </div>
-        <img src="img/bouquet-vase.svg" alt="Bouquet de fleurs dans un pot">
+        <img src="img/bouquet-vase.svg" alt=""  class="w-full rounded-3xl md:w-1/2 md:max-w-[524px]">
     </section>
+    <section id="bouquets" class="mx-auto flex max-w-6xl flex-wrap gap-8 px-4 py-16 md:px-8 md:py-24">
+        <h2 class="w-full font-titre text-3xl font-bold text-encre md:text-4xl">Les bouquets de la semaine</h2>
+        <p class="w-full font-texte text-base text-encre">Nos compositions renouvelées chaque lundi, à retirer en boutique ou à faire livrer.</p>
 
-    <section id="bouquets">
-        <h2>Les bouquets de la semaine</h2>
-        <p>Nos compositions renouvelées chaque lundi, à retirer en boutique ou à faire livrer.</p>
-
-        <article>
-            <img src="img/bouquet-marche.svg" alt="Bouquet du marché">
-            <h3>Bouquet du marché</h3>
-            <p>Renoncules, marguerites et brins de verdure.</p>
-            <p>28 €</p>
-            <a href="#contact">Commander</a>
+        <article  class="flex w-full flex-wrap overflow-hidden rounded-2xl bg-creme sm:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)]">
+            <img src="img/bouquet-marche.svg" alt="" class="aspect-[4/3] w-full object-cover">
+            <h3 class="w-full px-6 pt-6 font-titre text-xl font-bold text-encre">Bouquet du marché</h3>
+            <p class="w-full px-6 pt-2 font-texte text-sm text-encre">Renoncules, marguerites et brins de verdure.</p>
+            <p class="mr-auto px-6 py-6 font-texte text-lg font-semibold text-framboise">28 €</p>
+            <a href="#contact" class="px-6 py-6 font-texte text-base font-semibold text-framboise">Commander</a>
         </article>
 
-        <article>
-            <img src="img/bouquet-roses.svg" alt="Roses anciennes">
-            <h3>Roses anciennes</h3>
-            <p>Roses parfumées en rose et bordeaux.</p>
-            <p>45 €</p>
-            <a href="#contact">Commander</a>
+        <article  class="flex w-full flex-wrap overflow-hidden rounded-2xl bg-creme sm:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)]">
+            <img src="img/bouquet-roses.svg" alt="" class="aspect-[4/3] w-full object-cover">
+            <h3 class="w-full px-6 pt-6 font-titre text-xl font-bold text-encre">Roses anciennes</h3>
+            <p class="w-full px-6 pt-2 font-texte text-sm text-encre">Roses parfumées en rose et bordeaux.</p>
+            <p class="mr-auto px-6 py-6 font-texte text-lg font-semibold text-framboise">45 €</p>
+            <a href="#contact" class="px-6 py-6 font-texte text-base font-semibold text-framboise">Commander</a>
         </article>
 
-        <article>
-            <img src="img/bouquet-champetre.svg" alt="Bouquet champêtre">
-            <h3>Champêtre</h3>
-            <p>Fleurs des champs, avoine et feuillages.</p>
-            <p>32 €</p>
-            <a href="#contact">Commander</a>
+        <article  class="flex w-full flex-wrap overflow-hidden rounded-2xl bg-creme sm:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)]">
+            <img src="img/bouquet-champetre.svg" alt="" class="aspect-[4/3] w-full object-cover">
+            <h3 class="w-full px-6 pt-6 font-titre text-xl font-bold text-encre">Champêtre</h3>
+            <p class="w-full px-6 pt-2 font-texte text-sm text-encre">Fleurs des champs, avoine et feuillages.</p>
+            <p class="mr-auto px-6 py-6 font-texte text-lg font-semibold text-framboise">32 €</p>
+            <a href="#contact" class="px-6 py-6 font-texte text-base font-semibold text-framboise">Commander</a>
         </article>
     </section>
-
-    <section id="pourquoi">
-        <h2>Pourquoi choisir Fleurs Roussel ?</h2>
-        <ul>
-            <li>
-                <h3>Des fleurs de saison</h3>
-                <p>Achetées chez des producteurs du Loir-et-Cher.</p>
+    <section id="pourquoi" class="bg-petale text-center text-encre md:px-8 md:py-24" >
+        <h2 class="pt-24 pb-12 mb-12 font-titre text-3xl font-bold md:text-4xl">Pourquoi choisir Fleurs Roussel ?</h2>
+        <ul class="mx-auto flex max-w-6xl flex-col gap-10 md:flex-row">
+            <li class="flex flex-1 flex-col items-center text-center">
+                <div class="flex size-20 items-center justify-center rounded-full bg-white">
+                    <img src="img/icone-saison.svg" alt="" class="size-8">
+                </div>
+                <h3 class="mt-6 font-titre text-xl font-bold">Des fleurs de saison</h3>
+                <p class="mt-2 font-texte text-base">Achetées chez des producteurs du Loir-et-Cher et de Touraine.</p>
             </li>
-            <li>
-                <h3>Livrées le jour même</h3>
-                <p>Pour toute commande passée avant 12 h.</p>
+            <li class="flex flex-1 flex-col items-center text-center">
+                <div class="flex size-20 items-center justify-center rounded-full bg-white">
+                    <img src="img/icone-livraison.svg" alt="" class="size-8">
+                </div>
+                <h3 class="mt-6 font-titre text-xl font-bold">Livrées le jour même</h3>
+                <p class="mt-2 font-texte text-base">Pour toute commande passée avant 12 h.</p>
             </li>
-            <li>
-                <h3>Composées à la main</h3>
-                <p>Chaque bouquet est unique, emballé sans plastique.</p>
+            <li class="flex flex-1 flex-col items-center text-center">
+                <div class="flex size-20 items-center justify-center rounded-full bg-white">
+                    <img src="img/icone-atelier.svg" alt="" class="size-8">
+                </div>
+                <h3 class="mt-6 font-titre text-xl font-bold">Composées à la main</h3>
+                <p class="mt-2 font-texte text-base">Chaque bouquet est unique, emballé sans plastique.</p>
             </li>
         </ul>
     </section>
-
-    <section id="atelier">
-        <div>
-            <h2>Composez votre bouquet en atelier</h2>
-            <p>Un samedi par mois, Madame Roussel partage ses gestes de fleuriste.</p>
-            <p>Sur réservation, matériel fourni, 45 € par personne.</p>
-            <a href="#contact">Réserver une place</a>
+    <section id="atelier" class="flex flex-col-reverse gap-10 bg-sauge px-4 py-16 text-blanc md:min-h-[559px] md:flex-row md:items-center md:justify-center md:px-8 md:py-24">
+        <div class="flex flex-col text-left md:w-1/2 md:max-w-[524px]">
+            <h2 class="mb-4 font-titre text-3xl font-bold md:text-4xl">Composez votre bouquet en atelier</h2>
+            <p class="mb-6 font-texte text-base">Un samedi par mois, Madame Roussel partage ses gestes de fleuriste.</p>
+            <p class="font-texte text-base">Sur réservation,</p>
+            <p class="font-texte text-base">matériel fourni,</p>
+            <p class="font-texte text-base">45 € par personne.</p>
+            <a href="#contact" class="mt-8 inline-flex h-[48px] w-[197px] items-center justify-center rounded-full bg-blanc font-texte text-base font-semibold text-sauge">Réserver une place</a>
         </div>
-        <img src="img/atelier.svg" alt="Bouquet en cours de composition">
+        <img src="img/atelier.svg" alt="" class="w-full max-w-[524px] rounded-3xl md:h-[367px] md:object-cover">
     </section>
-
 </main>
-
-<footer id="contact">
-    <section>
-        <h2>Fleurs Roussel</h2>
-        <p>Artisane fleuriste à Vendôme depuis 1996.</p>
+<footer id="contact" class="flex flex-col gap-10 bg-encre px-4 pt-16 text-blanc md:flex-row md:flex-wrap md:px-32">
+    <section class="md:flex-1">
+        <h2 class="mb-2 font-titre text-2xl font-bold">Fleurs Roussel</h2>
+        <p class="font-texte text-sm">Artisane fleuriste à Vendôme depuis 1996.</p>
     </section>
-    <section>
-        <h3>Boutique</h3>
-        <address>
+    <section class="md:flex-1">
+        <h3 class="mb-2 font-texte text-sm font-semibold">Boutique</h3>
+        <address class="font-texte text-sm not-italic">
             12 rue du Gouvernement<br>
             41100 Vendôme<br>
             <a href="tel:+33254000000">02 54 00 00 00</a>
         </address>
     </section>
-    <section>
-        <h3>Horaires</h3>
-        <p>Mardi – Samedi<br>9 h – 19 h</p>
+    <section class="md:flex-1">
+        <h3 class="mb-2 font-texte text-sm font-semibold">Horaires</h3>
+        <p class="font-texte text-sm">Mardi – Samedi<br>9 h – 19 h</p>
     </section>
-    <p><small>© Fleurs Roussel – Tous droits réservés</small></p>
+    <p class="-mx-4 w-[calc(100%+2rem)] border-t border-blanc/30 py-4 text-center font-texte text-xs md:-mx-32 md:w-[calc(100%+16rem)]">© Fleurs Roussel – Tous droits réservés</p>
 </footer>
 </body>
 </html>
